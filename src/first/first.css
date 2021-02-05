@@ -21,14 +21,15 @@
 }
 
 .ContactForm_input {
-  background: rgba(120, 80, 134, 0.34);
+  background: rgba(192, 143, 209, 0.25);
   border-radius: 10px;
   color: black;
   border: 0;
 }
 
 .Form_submitBtn {
-  background: #785086;
+  background: rgba(120, 80, 134, 0.25);
+  color: #785086;
   border-radius: 10px;
   padding-top: 9px;
   padding-bottom: 9px;
@@ -62,14 +63,15 @@
   }
 
   .ContactForm_input {
-    background: rgba(120, 80, 134, 0.34);
+    background: rgba(120, 80, 134, 0.15);
     border-radius: 10px;
     color: black;
     border: 0;
   }
 
   .Form_submitBtn {
-    background: #785086;
+    background: rgba(120, 80, 134, 0.25);
+    color: #785086;
     border-radius: 10px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -104,20 +106,22 @@
   }
 
   .ContactForm_input {
-    background: rgba(120, 80, 134, 0.34);
+    background: rgba(120, 80, 134, 0.15);
     border-radius: 10px;
     color: black;
     border: 0;
   }
 
   .Form_submitBtn {
-    background: #785086;
+    background: rgba(120, 80, 134, 0.25);
+    color: #785086;
     border-radius: 10px;
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 50px;
     padding-right: 50px;
     border: 0;
+    color: white;
     margin-top: 70px;
   }
 }
@@ -160,7 +164,8 @@
   }
 
   .Form_submitBtn {
-    background: #785086;
+    background: rgba(120, 80, 134, 0.25);
+    color: #785086;
     border-radius: 10px;
     padding-top: 9px;
     padding-bottom: 9px;

@@ -35,7 +35,7 @@ class First extends React.Component {
                           />
                         </div>
                       </div>
-                      <div className="row p-0">
+                      <div className="row mt-2 p-0">
                         <div className="form-group col-12 ">
                           <input
                             type="email"
@@ -44,7 +44,7 @@ class First extends React.Component {
                             placeholder="E-mail ID"
                           />
                         </div>
-                        <div className="form-group col-12 ">
+                        <div className="form-group mt-2 col-12 ">
                           <input
                             type="number"
                             class="form-control ContactForm_input"
@@ -53,7 +53,7 @@ class First extends React.Component {
                           />
                         </div>
                       </div>
-                      <div className="row ">
+                      <div className="row mt-2 ">
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
@@ -65,7 +65,7 @@ class First extends React.Component {
                         </div>
                       </div>
 
-                      <div className="row ">
+                      <div className="row mt-2">
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
@@ -76,7 +76,7 @@ class First extends React.Component {
                           ></textarea>
                         </div>
                       </div>
-                      <div className="row ">
+                      <div className="row mt-2">
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
@@ -140,7 +140,7 @@ class First extends React.Component {
                           />
                         </div>
                       </div>
-                      <div className="row p-0">
+                      <div className="row p-0 mt-3">
                         <div className="form-group col-md-8 pl-0">
                           <input
                             type="email"
