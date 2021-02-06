@@ -5,13 +5,61 @@ import Button from "react-bootstrap/Button";
 import one from "../Images/1.png";
 import "./first.css";
 import captch from "../Images/Rectangle 1436.png";
+import ellipse from "../Images/Ellipse 220.png";
+import { MdMenu } from "react-icons/md";
+
 class First extends React.Component {
   render() {
     return (
       <Fragment>
         <div className="mobileView">
-          <div className=" container-fluid ContactFirst p-0">
-            <div className="row  p-0  ContactHeader_row">
+          <div className="ContactFirst p-0">
+            <div className="row p-0 ContactHeader_row">
+              <div
+                className="col-11 p-0 text-center"
+                style={{ fontSize: "28px" }}
+              >
+                <p>What shall be in next?</p>
+              </div>
+            </div>
+            <div className="row p-0 ContactHeader_row">
+              <div className="col-2">
+                <p className="ContactMobile_number">1.</p>
+              </div>
+              <div className="col-10">
+                <p className="ContactMobile_lititle">
+                  Your response has been collected
+                </p>
+                <p className="ContactMobile_liSubtitle">
+                  Your response collected shall be seen through & our concerned
+                  team shall be in touch with you. We take every response
+                  seriously
+                </p>
+              </div>
+            </div>
+            <div className="row  p-0 ContactHeader_row align-items-center ContactMobile_rowHeader">
+              <div
+                className="col-2 pl-0 pr-0 mt-3 mb-3"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  src={ellipse}
+                  alt=""
+                  className="img-fluid ContactMobile_image"
+                />
+              </div>
+              <div className="col-10 mt-3 mb-3">
+                <div>
+                  <p className="ContactHeaderMobile_Col2title">
+                    If having any query, enquiry feel free to write to us!
+                  </p>
+                  <p className="ContactHeaderMobile_Col2subtitle">
+                    Fill the below form to contact us!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row  p-0 ContactHeader_row">
               <div className="col-12 Contact_form">
                 <div className="">
                   <form className="row Contact_col2Form">
@@ -105,8 +153,36 @@ class First extends React.Component {
                   </form>
                 </div>
               </div>
-              <div className="col-12 p-0">
-                <img src={one} alt="" className="Contact_col1Image img-fluid" />
+            </div>
+            <div className="row p-0 ContactHeader_row mt-5">
+              <div className="col-2">
+                <p className="ContactMobile_number">2.</p>
+              </div>
+              <div className="col-10">
+                <p className="ContactMobile_lititle">
+                  Together we grow, together we improve
+                </p>
+                <p className="ContactMobile_liSubtitle">
+                  Nima Strives harder each day to give a best one to one
+                  experience. All the alloted are ISM graduates which believes
+                  in the query generated & heads towards bringing a change in.
+                </p>
+              </div>
+            </div>
+            <div className="row p-0 ContactHeader_row">
+              <div className="col-2">
+                <p className="ContactMobile_number">3.</p>
+              </div>
+              <div className="col-10">
+                <p className="ContactMobile_lititle">
+                  Doubts, FAQ’s can be confirmed from here?
+                </p>
+                <p className="ContactMobile_liSubtitle mb-5">
+                  Our trained Medical Professionals are members of this
+                  association, this service can be considered for any enquirey
+                  related for NIMA’s enrollment & FAQ’s regarding the Process
+                  shall also be solved
+                </p>
               </div>
             </div>
           </div>

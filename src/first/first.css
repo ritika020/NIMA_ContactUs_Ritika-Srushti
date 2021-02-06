@@ -1,5 +1,6 @@
 .ContactFirst {
   background: #f5f5f5;
+  font-family: "Poppins", sans-serif;
   padding-bottom: 75px;
 }
 .mobileView {
@@ -137,7 +138,10 @@
     padding-bottom: 75px;
     background-color: white;
   }
-
+  .ContactMobile_image {
+    width: 42px;
+    height: 42px;
+  }
   .Contact_form {
     background: white;
     /* padding-left: 40px;
@@ -164,8 +168,9 @@
   }
 
   .Form_submitBtn {
-    background: rgba(120, 80, 134, 0.25);
-    color: #785086;
+    background: #785086;
+    /* color: #785086; */
+    color: black;
     border-radius: 10px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -174,5 +179,43 @@
     border: 0;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .ContactMobile_number {
+    background: #d1c3d6;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+  }
+  .ContactMobile_lititle {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #785086;
+  }
+  .ContactMobile_liSubtitle {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    margin-right: 20px;
+  }
+  .ContactMobile_rowHeader {
+    background: #f1f1f1;
+  }
+  .ContactHeaderMobile_Col2title {
+    font-size: 11px;
+    margin-bottom: 0;
+  }
+
+  .ContactHeaderMobile_Col2subtitle {
+    font-size: 16px;
+    margin-bottom: 0;
   }
 }
