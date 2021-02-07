@@ -6,6 +6,9 @@
   line-height: 87px;
   color: #ffffff;
 }
+.ContactMobile_menu {
+  display: none;
+}
 .ContactHeader_container {
   background: #785086;
   padding-top: 150px;
@@ -165,13 +168,13 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 38px;
     margin-bottom: 0;
     color: #ffffff;
   }
   .ContactHeader_container {
     background: #785086;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -188,16 +191,17 @@
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 2;
     margin-bottom: 0;
     color: #ffffff;
   }
 
-  .ContactHeader_Col2title {
+  /* .ContactHeader_Col2title {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 11px;
     margin-bottom: 0;
     color: #000000;
   }
@@ -208,10 +212,16 @@
     font-weight: normal;
     font-size: 13px;
     color: #000000;
-  }
+  } */
 
   .ContactHeader_col2 {
     background: #f5f5f5;
     padding-top: 25px;
+  }
+  .ContactMobile_menu {
+    display: block;
+  }
+  .ContactUs_mobile {
+    display: none;
   }
 }
