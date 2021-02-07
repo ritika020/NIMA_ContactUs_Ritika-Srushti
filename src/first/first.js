@@ -7,8 +7,43 @@ import "./first.css";
 import captch from "../Images/Rectangle 1436.png";
 import ellipse from "../Images/Ellipse 220.png";
 import { MdMenu } from "react-icons/md";
-
+import { sendContactUsForm } from "../DataService/ContactUs";
 class First extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+      contactNo: "",
+      permenentAddress: "",
+      subject: "",
+      suggestions: "",
+    };
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
+    var formData = new FormData(event.target);
+    const data = {};
+    data["firstName"] = formData.get("firstName") || this.state.firstName;
+    data["lastName"] = formData.get("lastName") || this.state.lastName;
+    data["email"] = formData.get("email") || this.state.email;
+    data["contactNo"] = formData.get("contactNo") || this.state.contactNo;
+    data["permenentAddress"] =
+      formData.get("permenentAddress") || this.state.permenentAddress;
+    data["subject"] = formData.get("subject") || this.state.subject;
+    data["suggestions"] = formData.get("suggestions") || this.state.suggestions;
+
+    console.log(data);
+    sendContactUsForm(data);
+  };
+  handleChange = (event) => {
+    event.preventDefault();
+    // let key = event.target.name;
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+  };
   render() {
     return (
       <Fragment>
@@ -62,15 +97,22 @@ class First extends React.Component {
             <div className="row  p-0 ContactHeader_row">
               <div className="col-12 Contact_form">
                 <div className="">
-                  <form className="row Contact_col2Form">
+                  <form
+                    className="row Contact_col2Form"
+                    onSubmit={this.handleSubmit}
+                  >
                     <div className="col-12">
                       <div className="row p-0">
                         <div className="form-group  col-6">
                           <input
                             type="text"
                             class="form-control ContactForm_input "
-                            id="Form_input1"
+                            // id="Form_input1"
                             placeholder="First Name"
+                            required
+                            name="firstName"
+                            onChange={this.handleChange}
+                            id="firstName"
                             style={{ color: "#390969" }}
                           />
                         </div>
@@ -78,7 +120,11 @@ class First extends React.Component {
                           <input
                             type="text"
                             class="form-control ContactForm_input"
-                            id="Form_input2"
+                            // id="Form_input2"
+                            required
+                            onChange={this.handleChange}
+                            name="lastName"
+                            id="lastName"
                             placeholder="Last Name"
                           />
                         </div>
@@ -88,15 +134,21 @@ class First extends React.Component {
                           <input
                             type="email"
                             class="form-control ContactForm_input"
-                            id="Form_input3"
+                            id="email"
+                            name="email"
+                            onChange={this.handleChange}
+                            required
                             placeholder="E-mail ID"
                           />
                         </div>
                         <div className="form-group mt-2 col-12 ">
                           <input
                             type="number"
+                            id="contactNo"
+                            name="contactNo"
+                            onChange={this.handleChange}
                             class="form-control ContactForm_input"
-                            id="Form_input4"
+                            required
                             placeholder="Phone number"
                           />
                         </div>
@@ -105,7 +157,9 @@ class First extends React.Component {
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="permenentAddress"
+                            onChange={this.handleChange}
+                            name="permenentAddress"
                             placeholder="Permanent Address"
                             rows="2"
                             required
@@ -117,7 +171,9 @@ class First extends React.Component {
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="subject"
+                            onChange={this.handleChange}
+                            name="subject"
                             placeholder="Subject"
                             rows="1"
                             required
@@ -128,7 +184,9 @@ class First extends React.Component {
                         <div className="form-group col-12 ">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="suggestions"
+                            name="suggestions"
+                            onChange={this.handleChange}
                             placeholder="Query/Suggestion"
                             rows="3"
                             required
@@ -202,7 +260,9 @@ class First extends React.Component {
                           <input
                             type="text"
                             class="form-control ContactForm_input "
-                            id="Form_input1"
+                            name="firstName"
+                            onChange={this.handleChange}
+                            id="firstName"
                             placeholder="First Name"
                             style={{ color: "#390969" }}
                           />
@@ -211,7 +271,9 @@ class First extends React.Component {
                           <input
                             type="text"
                             class="form-control ContactForm_input"
-                            id="Form_input2"
+                            onChange={this.handleChange}
+                            name="lastName"
+                            id="lastName"
                             placeholder="Last Name"
                           />
                         </div>
@@ -221,7 +283,9 @@ class First extends React.Component {
                           <input
                             type="email"
                             class="form-control ContactForm_input"
-                            id="Form_input3"
+                            id="email"
+                            name="email"
+                            onChange={this.handleChange}
                             placeholder="E-mail ID"
                           />
                         </div>
@@ -229,16 +293,20 @@ class First extends React.Component {
                           <input
                             type="number"
                             class="form-control ContactForm_input"
-                            id="Form_input4"
+                            id="contactNo"
+                            name="contactNo"
+                            onChange={this.handleChange}
                             placeholder="Phone number"
                           />
                         </div>
                       </div>
-                      <div className="row ">
+                      <div className="row mt-3">
                         <div className="form-group col-md-12 pl-0">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="permenentAddress"
+                            onChange={this.handleChange}
+                            name="permenentAddress"
                             placeholder="Permanent Address"
                             rows="2"
                             required
@@ -246,22 +314,26 @@ class First extends React.Component {
                         </div>
                       </div>
 
-                      <div className="row ">
+                      <div className="row mt-3">
                         <div className="form-group col-md-12 pl-0">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="subject"
+                            onChange={this.handleChange}
+                            name="subject"
                             placeholder="Subject"
                             rows="1"
                             required
                           ></textarea>
                         </div>
                       </div>
-                      <div className="row ">
+                      <div className="row mt-3">
                         <div className="form-group col-md-12 pl-0">
                           <textarea
                             class="form-control ContactForm_input"
-                            id="Form_input5"
+                            id="suggestions"
+                            name="suggestions"
+                            onChange={this.handleChange}
                             placeholder="Query/Suggestion"
                             rows="3"
                             required
