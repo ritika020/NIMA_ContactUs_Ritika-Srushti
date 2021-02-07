@@ -253,7 +253,10 @@ class First extends React.Component {
               </div>
               <div className="col-7 Contact_form">
                 <div className="">
-                  <form className="row Contact_col2Form">
+                  <form
+                    className="row Contact_col2Form"
+                    onSubmit={this.handleSubmit}
+                  >
                     <div className="col-12">
                       <div className="row p-0">
                         <div className="form-group pl-0 col-md-6">
