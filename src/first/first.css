@@ -16,9 +16,9 @@
   height: 649px;
 }
 .Contact_col2Form {
-  padding-left: 40px;
+  padding-left: 60px;
   padding-top: 30px;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
 .ContactForm_input {
@@ -58,7 +58,7 @@
     padding-right: 50px;
   }
   .Contact_col2Form {
-    padding-left: 20px;
+    padding-left: 40px;
     padding-top: 30px;
     padding-right: 40px;
   }
@@ -103,7 +103,7 @@
   .Contact_col2Form {
     padding-left: 40px;
     padding-top: 30px;
-    padding-right: 80px;
+    padding-right: 40px;
   }
 
   .ContactForm_input {
