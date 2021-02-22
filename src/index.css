@@ -14,4 +14,34 @@ code {
 .Contact_lastDiv {
   background: #785086;
   height: 350px;
+  position: relative;
+}
+.Contact_footer_upcloud {
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px;
+  position: absolute;
+  padding-bottom: 0;
+  /* margin-left: 5%; */
+  bottom: 0;
+  margin-bottom: 0;
+}
+/* mobile */
+@media screen and (max-width: 480px) {
+  .Contact_footer_upcloud {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    position: absolute;
+    padding-bottom: 0;
+    /* margin-left: 5%; */
+    bottom: 0;
+    margin-bottom: 0;
+  }
 }

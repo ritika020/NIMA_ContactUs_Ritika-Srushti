@@ -10,7 +10,11 @@ ReactDOM.render(
     <div className="contactus_maindiv">
       <Header />
       <First />
-      <div className="Contact_lastDiv"></div>
+      <div className="Contact_lastDiv">
+        <div className="Contact_footer_upcloud">
+          <p>Powered by Upcloud Technology Pvt Ltd</p>
+        </div>
+      </div>
     </div>
   </React.StrictMode>,
   document.getElementById("root")
